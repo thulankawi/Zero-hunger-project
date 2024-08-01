@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: url("poto for next.jpg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.custombutton{
+    margin-left: 250px;
+    background-color: rgb(10, 150, 10);
+        display: inline-block;
+        padding: 10px 8px;
+        font-size: 15px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+    }
+    
+    .custombutton:hover {
+        background-color: #005132;
+    }
+    
+
+
+
+.team-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    vertical-align: top;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-color: black;
+    border-radius: 90%;
+    transition: transform 0.3s;
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+}
+
+.details {
+    display: none;
+    margin-top: 5px;
+    background-color: #e5dfdf;
+    padding: 3px;
+    text-align: left;
+}
+
+.team-member:hover .details {
+    display: block;
+}
+
+/* navigathion bar */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-45%);
+    width: auto; 
+    padding: 5px 4% ;
+    z-index:1000; 
+}
+
+
+.nav_links ul {
+    display: flex;
+    padding: 0;
+    margin: 0px;
+    list-style: none;
+}
+
+.nav_links ul li {
+    padding:10px 12px;
+}
+
+.nav_links ul li a {
+    color: #0f0e0e;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.nav_links ul li a:hover {
+    background-color: rgb(34, 139, 34);
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+}
+
+.nav_links ul li a:active {
+    background-color: rgb(40, 188, 237);
+    border-radius: 12px;
+}
+
+

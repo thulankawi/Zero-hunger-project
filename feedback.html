@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="navigation_h.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="home.html"><img src="images/logo.png" alt="logo image"> </a>
+            <div class="nav_links">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="content.html">CONTENT</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="feedback.html">FEEDBACK</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="team.html">ABOUT US</a></li>
+
+                </ul>
+            </div>
+            <a href="checkout.html"><img src="images/cart1.png" alt="cart image"> </a>
+        </nav>
+        <div>
+            <a href="pageEditor.html" class="button2">Page Editor</a>
+        </div>
+    </div>
+
+    <div class="feedback-container">
+        <h1> Feedback Form</h1>
+        <form id="feedbackform" action="mailto:harshana.20230399@iit.ac.lk" method="post" enctype="text/plain"  onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="K.P.Nimal" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="nimal.kp@gmail.com">
+            
+            <label>Was this your firstime visiting our website?</label>
+            <div class="radio-inline">
+                <input type="radio" id="q1a1" name="q1" value="yes" required>
+                <label for="q1a1">Yes</label>
+                <input type="radio" id="q1a2" name="q1" value="no">
+                <label for="q1a2">No</label>
+            </div>    
+
+            <label>Did you find our website useful?</label>
+            <div class="radio-inline">
+                <input type="radio" id="q2a1" name="q2" value="yes" required>
+                <label for="q2a1">Yes</label>
+                <input type="radio" id="q2a2" name="q2" value="no">
+                <label for="q2a2">No</label>
+            </div>    
+
+            <label for="q3">If no, suggest any improvement for future</label>
+            <textarea name="q3" id="q3"></textarea>
+
+            <label for="q4">How did you hear about us?</label>
+            <select name="q4" id="q4" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Friend/Family">Friend/Family</option>
+                <option value="flyer/Artical">Flyer/Article</option>
+                <option value="other">Other</option>
+            </select> 
+
+            <label>How satisfied are you with our website?</label>
+            <div class="radio-inline">
+                <input type="radio" id="q5a1" name="q5" value="Very Satisfied">
+                <label for="q5a1">Very satisfied</label>
+                <input type="radio" id="q5a2" name="q5" value="Satisfied">
+                <label for="q5a2">Satisfied</label>
+                <input type="radio" id="q5a3" name="q5" value="Neutral">
+                <label for="q5a3">Neutral</label>
+                <input type="radio" id="q5a4" name="q5" value="Dissatisfied">
+                <label for="q5a4">Dissatisfied</label>
+                <input type="radio" id="q5a5" name="q5" value=" Very Dissatisfied">
+                <label for="q5a5">Very Dissatisfied</label>
+            </div>    
+            
+            
+            <label>Would you recommend our website to others?</label>
+            <div class="radio-inline">
+                <input type="radio" id="q6a1" name="q6" value="yes">
+                <label for="q6a1">Yes</label>
+                <input type="radio" id="q6a2" name="q6" value="no">
+                <label for="q6a2">No</label>
+            </div>    
+
+            <label for="q7">Do you have any additional questions or requests?</label>
+            <textarea name="q7" id="q7"></textarea>
+
+            <button type="submit">Submit</button>
+            </form>
+            <div id="message" class="hidden">
+                Thank you. Your feedback has been submitted successfully.
+            </div>    
+        </div>
+        <script src="feedback.js"></script>
+        <footer>
+            <div class="footer">
+                <div class="Quick-op">
+                    <h3>Quick Links</h3>
+                    <ul class="list">
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="content.html">CONTENT</a></li>
+                        <li><a href="shop.html">SHOP</a></li>
+                        <li><a href="feedback.html">FEEDBACK</a></li>
+                        <li><a href="profile.html">PROFILE</a></li>
+                        <li><a href="team.html">ABOUT US</a></li>
+    
+                    </ul>
+                </div>
+                <div class="quote">
+                    <p>"The war against hunger is truly mankind's war of liberation."<p>
+                    <p>-John F. Kennedy</p>
+                </div>      
+               
+                <div class="contacts">
+                    <h3>Contact us: </h3>
+                    <p>Phone : +94 75-0054758</p>
+                    <p>Email: info@feedthefuture.org</p>
+                    <address>Address: no.277,park street,colombo.</address>
+                </div>
+                
+                  
+                <div class="copyright">
+                    <p>&copy; 2024 Feed The Future. All right reserved.</p>
+                </div>
+               
+            </div>
+    
+        </footer>
+    </body>
+</html>        

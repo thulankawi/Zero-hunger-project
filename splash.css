@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(hsla(157, 48%, 80%, 0.749),rgb(255, 255, 255)), url(shop_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.place-logo{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.logo{
+    max-width: 300px;
+    width: auto;
+    height: auto;
+}
+
+.mission{
+    width: 40%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px #000000bf;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-image: linear-gradient(rgba(153,226,180, 0.749),rgb(255, 255, 255)),url(mission.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.center-text{
+    text-align: center;
+}
+
+.mission h1{
+    font-size: 70px;
+    margin-top: 15px;
+}
+
+.mission p{
+    margin: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.members{
+    width: 30%;
+    margin:0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translateX(-10%); /* Center the box horizontally */
+    background-image: linear-gradient(rgba(153,226,180, 0.749),rgb(255, 255, 255)),url(images/mission\ background.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 6px #000000bf
+}
+
+members h1{
+    font-size: 50px;
+    margin-top: 15px;
+    text-align: center;
+}
+ul {
+    list-style-type: none; /* Remove default bullet points */
+}
+
+ul li {
+    padding-left: 20px; /* Add padding to make space for the image */
+    background: url(images/user_image.png) no-repeat left center; /* Set the image as the background */
+    background-size: 16px 16px; /* Adjust the size of the background image */
+    margin: 20px;
+    line-height: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgb(153, 226, 180), #FFFFFF);
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.splash.display-none{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(#99E2B4, #FFFFFF);
+    z-index: -10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.splash-logo{
+    max-width:60%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the logo horizontally and vertically */
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.ringloader {
+    position: fixed;
+    bottom: 20px;
+    left: 48%;
+    font-size: 25px;
+}
+
+.ring {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    height: 50px; 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+    50% {
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #18b201;
+    }
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #0456c8;
+    }
+}
+
+.ring::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+}
+
+span {
+    color: #737373;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+    animation: text 3s ease-in-out infinite;
+}
+
+@keyframes text {
+    50% {
+        color: black;
+    }
+}
+
+#splash-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 9998;
+}
+@media screen and (max-width: 360px) {
+    .mission,
+    .members {
+        width: 95%; /* Adjust width for smaller screens */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .splash-logo {
+        max-width: 90%; /* Adjust logo size for smaller screens */
+    }
+
+    .ringloader {
+        font-size: 18px; /* Adjust loader font size for smaller screens */
+    }
+
+    .ring {
+        bottom: 20px; /* Adjust loader position for smaller screens */
+    }
+
+    span {
+        font-size: 14px; /* Adjust text size for smaller screens */
+    }
+}

@@ -1,0 +1,141 @@
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1% 4%;
+    justify-content: space-between;
+
+
+}
+
+.nav_links ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 12px;
+    position: relative;
+}
+
+.nav_links ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.nav_links ul li a:hover {
+    background-color:rgb(34, 139, 34);
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 20px;
+
+}
+
+.nav_links ul li a:active {
+    background-color: rgb(40, 188, 237);
+    border-radius: 12px;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    position: relative;
+    width: 100%;
+
+}
+
+.footer{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start
+}
+
+.Quick-op{
+    width: 15%;
+    position: relative;
+}
+
+.Quick-op h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    
+}
+
+.Quick-op a {
+    margin: 5px 0;
+    color: #fff;
+}
+
+.Quick-op ul{
+    list-style-type: none;
+    padding: 2%;
+}
+.Quick-op ul li{
+    margin: 8px;
+    text-align: left;
+    position: relative;
+}
+
+.Quick-op ul li a{
+    text-decoration: none;
+    position: relative; 
+    transition: color 0.5s ease-in-out;  
+}
+
+.Quick-op ul li:hover a{
+    color: forestgreen;
+}
+.Quick-op ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: forestgreen;
+    transition-duration: 0.5s;
+}
+.Quick-op ul li:hover::before{
+    width: 70px;
+}
+
+.contacts {
+    width: 18%;
+    text-align: left;
+}
+.contacts h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contacts p{
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.quote{
+
+    width: 50%;
+    text-align: center;
+    margin: 60px 0;    
+}
+
+.quote p{
+    font-size: 18px;
+    margin: 0;
+    color: forestgreen;
+}
+
+
+.copyright{
+    background: forestgreen;
+    text-align: center;
+    padding: 7px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
